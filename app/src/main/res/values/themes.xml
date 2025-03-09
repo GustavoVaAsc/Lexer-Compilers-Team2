@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.Lexer" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Custom theme that extends AppCompat theme -->
+    <style name="Theme.Lexer" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <!-- You can add other customizations like colorPrimary, etc. -->
+    </style>
 </resources>

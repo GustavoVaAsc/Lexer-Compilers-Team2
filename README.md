@@ -37,12 +37,14 @@ Classification:
 * Special characters
 *  Constants
 ## Body
+
 Es la descripción de la implementación realizada en el lenguaje de programación,
 así como las pruebas realizadas para obtener los resultados. Es importante resaltar lo
 siguiente:
 * No se debe mostrar código, solo describir funciones o la aplicación de los con-
 ceptos teóricos.
 * Las pruebas es describir las entradas ingresadas y las salidas obtenidas.
+
   
 ## Results 
 
@@ -56,6 +58,8 @@ resaltar lo siguiente:
 * No es describir si les gustó la actividad o no.
 * No es decir que se obtuvo de la práctica.
 * No es describir lo que fue difícil.
+
+The development of the lexical analyzer demonstrated the effectiveness of the theoretical concepts learned so far in the course, especially regarding the identification and classification of tokens. The implementation of context-free grammars and the correct classification of tokens were essential in solving the posed problem. Through this process, the applicability of concepts related to the construction of lexical analyzers was validated, showing how topics covered in previous semesters and current classes were integrated to effectively structure the solution.
 
 ## Bibliography 
 1. C. Staff, “What is lexical analysis?,” *Coursera*, Apr. 10, 2024. Available: [https://www-coursera-org.translate.goog/articles/lexical-analysis?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc]

@@ -1,3 +1,16 @@
+**TEAM MEMBERS:**  
+- 320068234  
+- 320239126  
+- 320257599  
+- 320278107  
+- 117002029  
+
+**Group:** 03  
+**Semester:** 2025-II  
+
+**Mexico City, Mexico. February 2025.**
+
+
 # Lexer-Compilers-Team2
 Repo for the Lexer of Compliers subject (School of Engineering, 2025-2 semester)
 
@@ -12,21 +25,37 @@ Repo for the Lexer of Compliers subject (School of Engineering, 2025-2 semester)
 > Develop an initial idea of a Context-Free Grammar (CFG) that applies right recursion and left factoring, with the purpose of creating a lexical analyzer capable of identifying and classifying the different types of tokens present in a text string.
 
 ## Theoretical framework 
-Lexical Analyzer: A lexical analyzer is a program that converts the input text into tokens and classifies these tokens into predefined categories. The lexical analyzer plays a crucial role in the analysis phase, as it provides the tokens to the parser to facilitate syntax analysis.
+_Lexical Analyzer:_ A lexical analyzer is a program that converts the input text into tokens and classifies these tokens into predefined categories. The lexical analyzer plays a crucial role in the analysis phase, as it provides the tokens to the parser to facilitate syntax analysis.
 
-Token: A token is a sequence of characters grouped into a single entity. Each token represents a set of character sequences that convey a specific meaning.
+_Token:_ A token is a sequence of characters grouped into a single entity. Each token represents a set of character sequences that convey a specific meaning.\
 Classification:
-Constants
 * Keywords
 * Identifiers
 * Literals
 * Operators
 * Punctuation
 * Special characters
+*  Constants
 ## Body
-
+Es la descripción de la implementación realizada en el lenguaje de programación,
+así como las pruebas realizadas para obtener los resultados. Es importante resaltar lo
+siguiente:
+* No se debe mostrar código, solo describir funciones o la aplicación de los con-
+ceptos teóricos.
+* Las pruebas es describir las entradas ingresadas y las salidas obtenidas.
+  
 ## Results 
 
-## Conclusions 
+Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.
+
+## Conclusions
+
+Se presenta un análisis de los resultados obtenidos, donde se destaca la importancia
+de la aplicación de los conceptos teóricos para resolver el problema. Es importante
+resaltar lo siguiente:
+* No es describir si les gustó la actividad o no.
+* No es decir que se obtuvo de la práctica.
+* No es describir lo que fue difícil.
 
 ## Bibliography 
+1. C. Staff, “What is lexical analysis?,” *Coursera*, Apr. 10, 2024. Available: [https://www-coursera-org.translate.goog/articles/lexical-analysis?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc]

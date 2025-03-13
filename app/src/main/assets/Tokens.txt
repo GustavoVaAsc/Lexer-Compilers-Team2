@@ -3,5 +3,5 @@ Keywords
 Constants
 Operators
 Punctuation
-Special
+Unknown
 Literals

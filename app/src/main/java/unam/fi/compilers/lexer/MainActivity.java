@@ -7,11 +7,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.HashSet;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity{
 
     private EditText inputText;
     private TextView outputText;
@@ -28,14 +28,25 @@ public class MainActivity extends AppCompatActivity {
 
         tokenizeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 String text = inputText.getText().toString();
-               // List<Token> tokens = Lexer.tokenize(text);
-                //outputText.setText(tokens.toString());
+                ArrayList<StringBuilder> lexemes = new ArrayList<>();
+                for(String line : text.split("\\n")){
+                    lexemes.add(new StringBuilder(line));
+                }
+                try {
+                    Lexer lexer = new Lexer(lexemes,MainActivity.this);
+                    HashMap<String, HashSet<String>> tokens = lexer.tokenize();
+                    StringBuilder result = new StringBuilder();
+                    for(String category : tokens.keySet()){
+                        result.append(category).append(": ").append(tokens.get(category)).append("\n");
+                    }
+                    result.append("Total Tokens: ").append(lexer.getTotal_tokens());
+                    outputText.setText(result.toString());
+                }catch(Exception e){
+                    outputText.setText("Error: " + e.getMessage());
+                }
             }
         });
     }
 }
-
-
-

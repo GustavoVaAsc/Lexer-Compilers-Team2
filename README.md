@@ -52,6 +52,8 @@ siguiente:
 ceptos teóricos.
 * Las pruebas es describir las entradas ingresadas y las salidas obtenidas.
 
+We decided to create automata to represent each type of token using the JFLAP program. This tool allowed us to visualize the created automata more easily and validate that each one generated the correct tokens. Additionally, JFLAP provides an option to test input strings, enabling us to verify the correct functionality of each automaton.
+
   
 ## Results 
 

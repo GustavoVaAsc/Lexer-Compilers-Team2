@@ -6,16 +6,16 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.ArrayList;
+import java.lang.StringBuilder;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.regex.*;
 public class Lexer {
-    public ArrayList<String> lexemes;
+    public ArrayList<StringBuilder> lexemes;
     public HashMap<String,HashSet<String>> token_classification;
     public HashSet<String> keywords;
 
     private int total_tokens;
-    public Lexer(ArrayList<String> lexemes) throws IOException {
+    public Lexer(ArrayList<StringBuilder> lexemes) throws IOException {
         this.lexemes = lexemes;
         this.keywords = new HashSet<>();
         this.token_classification = new HashMap<>();
@@ -33,18 +33,35 @@ public class Lexer {
         BufferedReader token_reader = new BufferedReader(new FileReader("Tokens.txt"));
     }
 
-    public HashMap<String,HashSet<String>> tokenize(){
-        ArrayList<Integer> to_delete = new ArrayList<>();
-        int index = 0;
-        for(String lexeme : this.lexemes){
-            if(lexeme.length() >= 2 && lexeme.charAt(0) == '/' && lexeme.charAt(1) == '/'){
-                to_delete.add(index);
-                continue;
-            }
+    public String createKeywordRegex(){
+        StringBuilder regex_creator = new StringBuilder();
 
-
+        for(String keyword : keywords){
+            regex_creator.append(keyword).append('|');
         }
 
+        regex_creator.deleteCharAt(regex_creator.length()-1);
+        return regex_creator.toString();
+    }
+    public HashMap<String,HashSet<String>> tokenize(){
+        int index = 0;
+        String keyword_regex = this.createKeywordRegex();
+        for(int i=0; i<this.lexemes.size(); i++){
+            // Delete comments
+            String lexeme = this.lexemes.get(i).toString();
+            String cleared_lexeme = lexeme.replaceAll("//.*", "").trim();
+            if(cleared_lexeme.isEmpty()){
+                lexemes.set(i,new StringBuilder("\n"));
+                continue;
+            }else{
+                lexemes.set(i,new StringBuilder(cleared_lexeme));
+            }
+            // Check keyword
+            Pattern pattern = Pattern.compile(keyword_regex);
+
+            Matcher matcher = pattern.matcher(cleared_lexeme);
+
+        }
         return this.token_classification;
     }
 

@@ -74,7 +74,7 @@ After the automata were defined and tested, we derived the regex (regular expres
 ![Identifiers Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/IdentifiersRegex.png)<br>
 
 > Operators Regex:<br>
-![Operators Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/OperatorsRegex.png)<br>
+![Operators Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/OperatorsRegex.jpg)<br>
 
 > Puntuactors Regex:<br>
 ![Puntuactors Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/ConstantRegex.png)<br>

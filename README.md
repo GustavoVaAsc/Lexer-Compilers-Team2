@@ -199,19 +199,19 @@ Finally, the lexical analyzer was developed using Java as the main programming l
 
 Some more expamples are shown below with different entries each focusing on a different type of token.
 > ### Punctuation Tokens.
-
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Punctuation.jpg) 
 
 > ### Operator Tokens
-
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Operators.jpg) 
 
 > ### Keyword Tokens
-
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Keywords.jpg) 
 
 > ### Constant Tokens
-
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Constants.jpg) 
 
 > ### Identifier Tokens
-
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Identifiers.jpg) 
 
 ## Conclusions
 

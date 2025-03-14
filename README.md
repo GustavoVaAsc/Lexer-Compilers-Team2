@@ -139,13 +139,50 @@ F → (A) | !F | ID | NUM
    
 > Non- Terminal symbols:
 ```
-
+S → Statement
+D → Declaration
+A → Assignation
+T → Type
+ID → Identifier
+E → Expresión
+F → Factor
 ```
 <br>
 
 > Productions
 ```
+S → D ; | A ;
+D → T * ID // pointer declararion
+A → ID = E //normal assignment | *ID = E | ID = &ID   
+T → int | float | char
+E → NUM | ID | &ID | *ID
+ID → char (char | digit)*
+NUM → digit+
+```
+<br>
 
+3. Strings using If-Else structures that compare two variables
+
+> Non- Terminal symbols:
+```
+S → Start
+IF → If – Else Structure
+C → Logical Condition
+B → If – Else structure Body
+ID → Identifier
+CO → Comparison Operator
+```
+<br>
+
+> Productions
+```
+S → IF  
+IF → if ( C ) { B } else { B }  
+C → ID OP_COMP ID  
+OP_COMP → < | > | <= | >= | == | !=  
+B → S | ID = NUM ; | ε  
+ID → character (chsracter | digit)*  
+NUM → digit+  
 ```
 <br>
 

@@ -202,7 +202,7 @@ Some more expamples are shown below with different entries each focusing on a di
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Punctuation.jpg) 
 
 > ### Operator Tokens
-![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Operators.jpg) 
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Operators.png) 
 
 > ### Keyword Tokens
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Keywords.jpg) 

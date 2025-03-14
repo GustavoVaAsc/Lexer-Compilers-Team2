@@ -69,22 +69,41 @@ _Note: Brackets also function as punctuation symbols, but JFLAP does not recogni
 
 After the automata were defined and tested, we derived the regex (regular expressions) for each type of token based on their respective DFA (Deterministic Finite Automata. Allowing us to ensure that our logic remained consistent with the designed automata and adhered to the corresponding lexical rules.
 
+> Keywords Regex:<br>
+
+
+> Identifiers Regex:<br>
+![Identifiers Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/IdentifiersRegex.png)
+
+> Operators Regex:<br>
+
+
+> Puntuactors Regex:<br>
+![Puntuactors Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/ConstantRegex.png)
+
+> Constant Regex:<br>
+
+
+> Literals Regex:<br>
+![Literals Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/LiteralsRegex.png)
+
 Finally, we implemented the lexial analyzer, using the prior constructed regular expressions to define token patterns within our code. The lexer processes the input, compares it with the defined regex and classifies them into the token categories.
 
-> Keywords Regex:
+> Keywords Regex Implementation:
 
-> Identifiers Regex:
+> Identifiers Regex Implementation:
 ```^[A-Za-z_][A-Za-z0-9_]*$ ```
 
-> Operators Regex: ```">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^" ```
+> Operators Regex Implementation: ```">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^" ```
 
-> Puntuactors Regex: ```"\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->"; ```
+> Puntuactors Regex Implementation: ```"\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->"; ```
 
-> Constant Regex:
+> Constant Regex Implementation:
 ```"-?[0-9]+(\\.[0-9]+)?"; ```
 
-> Literals Regex:
+> Literals Regex Implementation:
 ```"\".*\""; ```
+
 ## Results 
 
 Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.

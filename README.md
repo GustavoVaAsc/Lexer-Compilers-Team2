@@ -50,8 +50,12 @@ As the first step, we decided to develop automata to represent each type of toke
 > Keywords Automata
 ![Keywords Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/KeywordsAutomata.jpg)
 
+> Identifiers Automata
+![Identifiers Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/IdentifiersAutomata.jpg) <br>
+_The states q4, q5, and q6 could have been included in the same state as q3; however, to improve understanding, they were implemented as separate states._ <br>
+
 > Operators Automata <br>
-![Operators Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/OperatorsAutomata.png)
+![Operators Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/OperatorsAutomata.png) 
 
 > Puntuactors Automata <br>
 ![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg) <br>

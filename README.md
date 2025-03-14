@@ -54,8 +54,9 @@ As the first step, we decided to develop automata to represent each type of toke
 ![Operators Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/OperatorsAutomata.png)
 
 > Puntuactors Automata <br>
-![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg)
-_Note: Brackets also function as punctuation symbols, but JFLAP does not recognize them, so they were not included in the automaton. However, they were considered in the implementation of our lexical analyzer._
+![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg) <br>
+_Note: Brackets also function as punctuation symbols, but JFLAP does not recognize them, so they were not included in the automaton. However, they were considered in the implementation of our lexical analyzer._ <br>
+
 > Constant Automata <br>
 ![Constant Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/ConstantAutomata.png)
 

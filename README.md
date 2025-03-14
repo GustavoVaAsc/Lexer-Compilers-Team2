@@ -101,8 +101,8 @@ We implemented the lexial analyzer, using the prior constructed regular expressi
 
 Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
-
-Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.
+> First interface when opening the application
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/FirstInterface.jpg)
 
 ## Conclusions
 

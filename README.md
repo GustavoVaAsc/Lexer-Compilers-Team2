@@ -58,7 +58,9 @@ We decided to create automata to represent each type of token using the JFLAP pr
 > Constant Automata <br>
 ![Constant Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/ConstantAutomata.png)
 
-  
+> Literals Automata <br>
+![Literals Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/LiteralsAutomata.jpg)
+
 ## Results 
 
 Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.

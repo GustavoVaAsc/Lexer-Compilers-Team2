@@ -113,28 +113,22 @@ Finally, the lexical analyzer was developed using Java as the main programming l
 
 ### String input
 > A string representing a program in the C language is entered. By clicking the "Tokenize" button, the detected tokens are classified, showing their type and which ones were identified in the code.
-
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Test1.jpg) 
 
 Some more expamples are shown below with different entries each focusing on a different type of token.
-### Punctuation Tokens.
-
+> ### Punctuation Tokens.
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/PunctuationTokens.jpg) 
 
-### Operator Tokens
-
+> ### Operator Tokens
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/OperatorTokens.jpg) 
 
-### Keyword Tokens
-
+> ### Keyword Tokens
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/KeywordTokens.jpg) 
 
-### Constant Tokens
-
+> ### Constant Tokens
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/ConstantTokens.jpg) 
 
-### Identifier Tokens
-
+> ### Identifier Tokens
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/IdentifierTokens.jpg) 
 
 ## Conclusions

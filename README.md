@@ -76,9 +76,9 @@ Finally, we implemented the lexial analyzer, using the prior constructed regular
 > Identifiers Automata:
 ```^[A-Za-z_][A-Za-z0-9_]*$ ```
 
-> Operators Automata
+> Operators Automata: ```">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^" ```
 
-> Puntuactors Automata 
+> Puntuactors Automata: ```"\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->"; ```
 
 > Constant Automata
 ```"-?[0-9]+(\\.[0-9]+)?"; ```

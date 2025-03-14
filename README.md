@@ -212,6 +212,44 @@ ID → letra (letra | dígito)*
 ```
 <br>
 
+5. Strings using the ‘for’ structure
+
+> Non- Terminal symbols:
+```
+S → Start
+FOR → For cycle
+INIT → Initialization
+COND → Condition
+UPD → Update
+B → For structure’s body
+P → Printing
+A → Assignment
+ID → Identifier
+NUM → Number
+STR → Printed string
+FMT → Printing Format (%d, %f, etc.)
+```
+<br>
+
+> Productions
+```
+S → FOR
+FOR → for ( INIT ; COND ; UPD ) { B }
+INIT → int ID = NUM
+COND → ID COND_OP NUM
+UPD → ID++
+COND_OP→ < | <= | > | >= | != | ==
+B → P ; | A ; | P ; A ; | 
+P → printf ( STR , ID )
+STR → "FMT\n"
+FMT → %d | %f | %c
+A → ID = NUM
+ID → character (character | digit)*
+NUM → digit+
+```
+<br>
+
+
 Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
 

@@ -83,7 +83,7 @@ After the automata were defined and tested, we derived the regex (regular expres
 
 > Literals Regex:<br>
 ![Literals Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/LiteralsRegex.png)<br>
-Finally, we implemented the lexial analyzer, using the prior constructed regular expressions to define token patterns within our code. The lexer processes the input, compares it with the defined regex and classifies them into the token categories.
+We implemented the lexial analyzer, using the prior constructed regular expressions to define token patterns within our code. The lexer processes the input, compares it with the defined regex and classifies them into the token categories.
 
 > Identifiers Regex Implementation:
 ```^[A-Za-z_][A-Za-z0-9_]*$ ```<br>
@@ -98,18 +98,12 @@ Finally, we implemented the lexial analyzer, using the prior constructed regular
 > Literals Regex Implementation:
 ```"\".*\""; ```<br>
 
+Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
 
 Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.
 
 ## Conclusions
-
-Se presenta un análisis de los resultados obtenidos, donde se destaca la importancia
-de la aplicación de los conceptos teóricos para resolver el problema. Es importante
-resaltar lo siguiente:
-* No es describir si les gustó la actividad o no.
-* No es decir que se obtuvo de la práctica.
-* No es describir lo que fue difícil.
 
 The development of the lexical analyzer demonstrated the effectiveness of the theoretical concepts learned so far in the course, especially regarding the identification and classification of tokens. The implementation of context-free grammars and the correct classification of tokens were essential in solving the posed problem. Through this process, the applicability of concepts related to the construction of lexical analyzers was validated, showing how topics covered in previous semesters and current classes were integrated to effectively structure the solution.
 

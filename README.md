@@ -104,6 +104,51 @@ We implemented the lexial analyzer, using the prior constructed regular expressi
 > Literals Regex Implementation:
 ```"\".*\""; ```<br>
 
+1. Operator composed strings
+
+> Non- Terminal symbols:
+```
+A → Assignation expression
+L → Logic expression
+C → Comparison
+E → Aritmetic expression
+T → Generic term
+F → Factor
+ID → Identifier
+N → number
+AO → Assignation Operator
+CO → Comparison Operator
+LO → Logic Operator
+A → ID OP_ASIG A | L
+```
+<br>
+
+> Productions
+```
+AO → = | += | -= | *= | /=
+L → L || C | L && C | C
+C → E CO E | E
+CO → == | != | < | > | <= | >=
+E → E + T | E - T | T
+T → T * F | T / F | F
+F → (A) | !F | ID | NUM
+```
+<br>
+
+2. Strings using pointers
+   
+> Non- Terminal symbols:
+```
+
+```
+<br>
+
+> Productions
+```
+
+```
+<br>
+
 Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
 

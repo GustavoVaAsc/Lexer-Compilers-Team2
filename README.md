@@ -45,7 +45,8 @@ _Finite Automata in Token Recognition:_ Because the lexical structure of most pr
 
 ## Body
 
-We decided to create automata to represent each type of token using the JFLAP program. This tool allowed us to visualize the created automata more easily and validate that each one generated the correct tokens. Additionally, JFLAP provides an option to test input strings, enabling us to verify the correct functionality of each automaton.
+As the first step, we decided to develop automata to represent each type of token using the JFLAP program. This decision allowed us to establish a solid foundation and perform a general analysis to understand how each token was constructed in our lexical analyzer. Using JFLAP facilitated the visualization of the created automata, enabling us to validate that each one generated the correct tokens. Additionally, the tool provides an option to test input strings, which allowed us to verify the correct functionality of each automaton. Below are the images of the created automata:
+
 > Keywords Automata
 ![Keywords Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/KeywordsAutomata.jpg)
 
@@ -54,7 +55,7 @@ We decided to create automata to represent each type of token using the JFLAP pr
 
 > Puntuactors Automata <br>
 ![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg)
-
+_Note: Brackets also function as punctuation symbols, but JFLAP does not recognize them, so they were not included in the automaton. However, they were considered in the implementation of our lexical analyzer._
 > Constant Automata <br>
 ![Constant Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/ConstantAutomata.png)
 

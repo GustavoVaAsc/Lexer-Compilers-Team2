@@ -186,6 +186,32 @@ NUM → digit+
 ```
 <br>
 
+4. Strings using the keywords Scanf and Printf
+
+> Non- Terminal symbols:
+```
+S → Start
+R → Reading (scanf)
+P → Printing
+T → Data Type
+ID → Identifier
+STR → String to print
+FMT → Format (ex. %d, %f, etc.)
+```
+<br>
+
+> Productions
+```
+S → R ; P ;
+R → scanf ( STR , &ID )
+P → printf ( STR , ID )
+T → int | float | char
+STR → TXT FMT TXT  //Text with format marker
+FMT → %d | %f | %c
+ID → letra (letra | dígito)*
+```
+<br>
+
 Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
 

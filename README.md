@@ -80,7 +80,7 @@ After the automata were defined and tested, we derived the regex (regular expres
 ![Puntuactors Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/ConstantRegex.png)<br>
 > Constant Regex:<br>
 ![Constant Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/ConstantRegex.png)
-(https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/ConstantRegex.png)<br>
+
 > Literals Regex:<br>
 ![Literals Regex](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/Regex/LiteralsRegex.png)<br>
 Finally, we implemented the lexial analyzer, using the prior constructed regular expressions to define token patterns within our code. The lexer processes the input, compares it with the defined regex and classifies them into the token categories.

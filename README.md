@@ -101,8 +101,15 @@ We implemented the lexial analyzer, using the prior constructed regular expressi
 
 Finally, the lexical analyzer was developed using Java as the main programming language. For the graphical interface, it was decided to develop an Android application, which facilitated a more intuitive interaction.
 ## Results 
+
+### Application start
 > First interface when opening the application
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/FirstInterface.jpg)
+
+### String input
+> A string representing a program in the C language is entered. By clicking the "Tokenize" button, the detected tokens are classified, showing their type and which ones were identified in the code.
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Test1.jpg) 
 
 ## Conclusions
 

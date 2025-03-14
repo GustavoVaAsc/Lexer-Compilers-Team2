@@ -5,7 +5,7 @@
 - 320278107  
 - 117002029  
 
-**Group:** 03  
+**Group:** 05  
 **Semester:** 2025-II  
 
 **Mexico City, Mexico. February 2025.**

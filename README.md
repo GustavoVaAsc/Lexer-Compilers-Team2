@@ -45,14 +45,18 @@ _Finite Automata in Token Recognition:_ Because the lexical structure of most pr
 
 ## Body
 
-Es la descripción de la implementación realizada en el lenguaje de programación,
-así como las pruebas realizadas para obtener los resultados. Es importante resaltar lo
-siguiente:
-* No se debe mostrar código, solo describir funciones o la aplicación de los con-
-ceptos teóricos.
-* Las pruebas es describir las entradas ingresadas y las salidas obtenidas.
-
 We decided to create automata to represent each type of token using the JFLAP program. This tool allowed us to visualize the created automata more easily and validate that each one generated the correct tokens. Additionally, JFLAP provides an option to test input strings, enabling us to verify the correct functionality of each automaton.
+> Keywords Automata
+![Keywords Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/KeywordsAutomata.jpg)
+
+> Operators Automata <br>
+![Operators Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/OperatorsAutomata.png)
+
+> Puntuactors Automata <br>
+![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg)
+
+> Constant Automata <br>
+![Constant Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/ConstantAutomata.png)
 
   
 ## Results 

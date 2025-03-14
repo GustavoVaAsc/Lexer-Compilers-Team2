@@ -71,19 +71,19 @@ After the automata were defined and tested, we derived the regex (regular expres
 
 Finally, we implemented the lexial analyzer, using the prior constructed regular expressions to define token patterns within our code. The lexer processes the input, compares it with the defined regex and classifies them into the token categories.
 
-> Keywords Automata:
+> Keywords Regex:
 
-> Identifiers Automata:
+> Identifiers Regex:
 ```^[A-Za-z_][A-Za-z0-9_]*$ ```
 
-> Operators Automata: ```">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^" ```
+> Operators Regex: ```">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^" ```
 
-> Puntuactors Automata: ```"\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->"; ```
+> Puntuactors Regex: ```"\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->"; ```
 
-> Constant Automata
+> Constant Regex:
 ```"-?[0-9]+(\\.[0-9]+)?"; ```
 
-> Literals Automata :
+> Literals Regex:
 ```"\".*\""; ```
 ## Results 
 

@@ -59,7 +59,7 @@ _The states q4, q5, and q6 could have been included in the same state as q3; how
 
 > Puntuactors Automata <br>
 ![Puntuactors Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/PuntuactorsAutomata.jpg) <br>
-_Note: Brackets also function as punctuation symbols, but JFLAP does not recognize them, so they were not included in the automaton. However, they were considered in the implementation of our lexical analyzer._ <br>
+_Note: Brackets also function as punctuation symbols, but JFLAP does not recognize them, so they were not included in the automata. However, they were considered in the implementation of our lexical analyzer._ <br>
 
 > Constant Automata <br>
 ![Constant Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/ConstantAutomata.png)

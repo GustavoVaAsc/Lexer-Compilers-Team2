@@ -126,8 +126,8 @@ public class Lexer {
             String no_lit_lexeme = cleared_lexeme.replaceAll("\".*\"", "").trim();
 
             // Check and classify tokens
-            classifyAndCount(keyword_regex, no_lit_lexeme, "Keywords");
             classifyAndCount(id_regex, no_lit_lexeme, "Identifiers");
+            classifyAndCount(keyword_regex, no_lit_lexeme, "Keywords");
             classifyAndCount(op_regex, no_lit_lexeme, "Operators");
             classifyAndCount(punt_regex, no_lit_lexeme, "Punctuation");
             classifyAndCount(const_regex, no_lit_lexeme, "Constants");
@@ -172,8 +172,9 @@ public class Lexer {
                 this.token_classification.get(category).add(token);
             }
 
-            // Count tokens
-            this.total_tokens++;
+            if(!this.keywords.contains(token) || "Identifiers".equals(category)){
+                this.total_tokens++;
+            }
         }
     }
 

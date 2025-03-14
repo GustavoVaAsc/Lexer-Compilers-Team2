@@ -61,6 +61,8 @@ We decided to create automata to represent each type of token using the JFLAP pr
 > Literals Automata <br>
 ![Literals Automata](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/AutomatasJFLAP/LiteralsAutomata.jpg)
 
+After the automata were defined and tested, we derive the regex (regular expressions) for each type of token based on their respective DFA (Deterministic Finite Automata. Allowing us to ensure that our logic remained consistent with the designed automata and followed the corresponding lexical rules.
+
 ## Results 
 
 Mediante capturas de pantalla y una breve descripción seguida de la captura se presentan los resultados finales de su aplicación.

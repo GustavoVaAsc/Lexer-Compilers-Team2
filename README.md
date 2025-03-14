@@ -116,6 +116,27 @@ Finally, the lexical analyzer was developed using Java as the main programming l
 
 ![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/Test1.jpg) 
 
+Some more expamples are shown below with different entries each focusing on a different type of token.
+### Punctuation Tokens.
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/PunctuationTokens.jpg) 
+
+### Operator Tokens
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/OperatorTokens.jpg) 
+
+### Keyword Tokens
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/KeywordTokens.jpg) 
+
+### Constant Tokens
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/ConstantTokens.jpg) 
+
+### Identifier Tokens
+
+![FirstInterface](https://github.com/GustavoVaAsc/Lexer-Compilers-Team2/blob/main/FinalResults/IdentifierTokens.jpg) 
+
 ## Conclusions
 
 The development of the lexical analyzer demonstrated the effectiveness of the theoretical concepts learned so far in the course, especially regarding the identification and classification of tokens. The implementation of context-free grammars and the correct classification of tokens were essential in solving the posed problem. Through this process, the applicability of concepts related to the construction of lexical analyzers was validated, showing how topics covered in previous semesters and current classes were integrated to effectively structure the solution.

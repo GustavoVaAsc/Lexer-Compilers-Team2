@@ -42,7 +42,6 @@ public class Lexer {
             }
             kw_reader.close();
 
-            // Read Tokens.txt from the assets folder
             BufferedReader token_reader = new BufferedReader(new InputStreamReader(assetManager.open("Tokens.txt")));
             line = token_reader.readLine();
             while (line != null) {
@@ -51,7 +50,7 @@ public class Lexer {
             }
             token_reader.close();
         } catch (IOException e) {
-            e.printStackTrace();  // Handle any file reading errors
+            e.printStackTrace();
         }
 
     }
@@ -69,10 +68,10 @@ public class Lexer {
     public HashMap<String, HashSet<String>> tokenize(){
         String keyword_regex = this.createKeywordRegex();
 
-        String id_regex = "[a-zA-Z][a-zA-Z0-9]*";
+        String id_regex = "[a-zA-Z_][a-zA-Z0-9_]*";
         String op_regex = ">>=|<<=|\\+=|-=|\\*=|/=|%=|==|!=|>=|<=|&&|\\|\\||\\+\\+|--|&=|\\|=|\\^=|=|>|<|!|\\+|-|\\*|/|%|&|\\||\\^";
         String punt_regex = "\\*|\\(|\\)|\\.|,|:|;|\\{|\\}|->";
-        String const_regex = "-?[0-9]+(\\.[0-9]+)?";
+        String const_regex = "-?[0-9]+(\\.[0-9]+)? | '[a-zA-Z]'";
         String lit_regex = "\".*\"";
 
         String known_regex = String.join("|", keyword_regex, id_regex, op_regex, punt_regex, const_regex, lit_regex);
@@ -88,12 +87,14 @@ public class Lexer {
                 lexemes.set(i, new StringBuilder(cleared_lexeme));
             }
 
+            String no_lit_lexeme = cleared_lexeme.replaceAll("\".*\"", "").trim();
+
             // Check and classify tokens
-            classifyAndCount(keyword_regex, cleared_lexeme, "Keywords");
-            classifyAndCount(id_regex, cleared_lexeme, "Identifiers");
-            classifyAndCount(op_regex, cleared_lexeme, "Operators");
-            classifyAndCount(punt_regex, cleared_lexeme, "Punctuation");
-            classifyAndCount(const_regex, cleared_lexeme, "Constants");
+            classifyAndCount(keyword_regex, no_lit_lexeme, "Keywords");
+            classifyAndCount(id_regex, no_lit_lexeme, "Identifiers");
+            classifyAndCount(op_regex, no_lit_lexeme, "Operators");
+            classifyAndCount(punt_regex, no_lit_lexeme, "Punctuation");
+            classifyAndCount(const_regex, no_lit_lexeme, "Constants");
             classifyAndCount(lit_regex, cleared_lexeme, "Literals");
 
             // Identify unknown tokens
@@ -118,11 +119,23 @@ public class Lexer {
     private void classifyAndCount(String regex, String text, String category){
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
-        while (matcher.find()){
-            this.token_classification.get(category).add(matcher.group());
+
+        while(matcher.find()){
+            String token = matcher.group();
+
+            if("Identifiers".equals(category)){
+                if(!this.keywords.contains(token)){
+                    this.token_classification.get(category).add(token);
+                }
+            }else{
+                this.token_classification.get(category).add(token);
+            }
+
             this.total_tokens++;
         }
     }
+
+
 
     public int getTotal_tokens(){return this.total_tokens;}
 }
